@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+classes = {"ME365": 14423, "CS159": 9983, "ME200": 223, "PHYS172": 33441}
+
+classes.each do |class_title, room|
+    SchoolClass.create(title: class_title, room_number: room)
+end
